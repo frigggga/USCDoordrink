@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">USCDoorDrink_FrontEnd</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="account">Please enter your username</string>
+    <string name="password">Please enter the password</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="contact">Please enter the contact information</string>
+    <string name="customerOrSeller">Sign up as</string>
+    <string name="check_customer">Customer</string>
+    <string name="check_seller">Seller</string>
+    <string name="title_activity_orders">OrdersActivity</string>
+
+
+    <string name="confirm_name_and_address">Confirm</string>
+    <string name="confirm_menu">Confirm</string>
+    <string name="confirm_drink">Confirm Drink</string>
+    <string name="add_store_name">Store Name</string>
+    <string name="add_store_lat">Store Latitude</string>
+    <string name="add_store_lng">Store Longitude</string>
+    <string name="add_drink">Add Drink</string>
+    <string name="delete_drink">Delete Drink</string>
+    <string name="add_drink_name">Drink Name</string>
+    <string name="add_drink_ingredient">Ingredient</string>
+    <string name="add_drink_price">Price</string>
+    <string name="add_drink_discounted_price">Discounts($x off)</string>
+    <string name="add_store_processing">Processing…</string>
+    <string name="add_store_successful">Store Updated Successfully!</string>
+    <string name="continue_to_map">Continue</string>
+    <string name="view_menu">Order At This Store</string>
+    <string name="personal_page">Personal Profiles</string>
+    <string name="title_activity_recommendation">RecommendationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="maps_api_key">AIzaSyCoj0HiPuANRmMbBN4fA51oCiRa8y_q8fA</string>
+    <string name="submit">Add to cart</string>
+    <string name="viewOrder">View Order</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_toast">----- Logging you in ------</string>
+</resources>

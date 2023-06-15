@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uscdoordrink_frontend">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.USCDoorDrink_FrontEnd.NoActionBar">
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="false"
+            android:theme="@style/MyActivityStyle" />
+        <activity
+            android:name=".ChartDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMenuActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <activity
+            android:name=".RecommendationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_recommendation"
+            android:theme="@style/Theme.USCDoorDrink_FrontEnd.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".OrderManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddStoreActivity"
+            android:exported="true">
+
+<!--             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter> -->
+
+        </activity>
+
+        <service
+            android:name=".service.OrderNotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="OrderNotificationService" />
+        <service
+            android:name=".service.DirectionService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ViewMenuActivity" -->
+        <!-- android:exported="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ViewChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" /> <!-- TODO: Before you run your application, you need a Google Maps API key. -->
+        <!-- To get one, follow the directions here: -->
+        <!-- https://developers.google.com/maps/documentation/android-sdk/get-api-key -->
+        <!-- Once you have your API key (it starts with "AIza"), define a new property in your -->
+        <!-- project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the -->
+        <!-- "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}". -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCoj0HiPuANRmMbBN4fA51oCiRa8y_q8fA" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

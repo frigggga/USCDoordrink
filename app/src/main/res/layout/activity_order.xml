@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_order"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/winkle"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:text="Order Preview" />
+
+    <ImageView
+        android:id="@+id/add_store_logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/uscdoordrink_logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_weight="1"
+            android:text="subtotal:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/pricesub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="-$ xxx"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/discounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="discounts:"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/pricedc"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-$ xxx"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tax:"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/pricetax"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ xxx"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delivery:"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/priceSt"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ xxx"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_medium"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_25"
+            />
+
+        <TextView
+            android:id="@+id/pricetotal"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ xxx"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/btn_maroon_selector"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal"></Button>
+
+</LinearLayout>

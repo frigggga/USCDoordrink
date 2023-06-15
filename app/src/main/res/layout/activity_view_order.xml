@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    tools:context=".ViewOrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/viewOrder"
+        android:id="@+id/ViewOrder"
+        android:fontFamily="@font/winkle"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@+id/ViewOrder"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/return_to_map"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_view_order"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="4dp"
+        android:text="return to map" />
+
+</RelativeLayout>

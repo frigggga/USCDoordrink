@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChartDetailActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Order History"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/winkle"
+        android:id="@+id/Menu"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Menu"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ReturnToBasis"
+            android:background="@drawable/btn_maroon_selector"
+            android:text="Return"
+            android:textSize="10dp"
+            android:layout_marginLeft="155dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

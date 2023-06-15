@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/UserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/winkle"
+            android:text="User Profile"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="-34dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/veryPeri"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Wade"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ContactInfo"
+                    android:textColor="@color/veryPeri"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="xxxxxxxxx"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/veryPeri"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="xxxxxxxxx"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Chart"
+                    android:textColor="@color/veryPeri"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_ViewChart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="View"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="495dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yonghutouxiang" />
+
+        <Button
+            android:id="@+id/manage_order"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="126dp"
+            android:text="Manage Order" />
+
+        <Button
+            android:id="@+id/back_to_map"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/manage_order"
+            android:layout_alignTop="@+id/manage_order"
+            android:layout_alignBottom="@+id/manage_order"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="-1dp"
+            android:text="return to map" />
+
+        <Button
+            android:id="@+id/manage_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="130dp"
+            android:text="Manage store"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manage_store"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="518dp"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="146dp"
+            android:text="Modify Profile" />
+
+        <Button
+            android:id="@+id/about_us"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manage_store"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="518dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="146dp"
+            android:text="About Us" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
