@@ -2,7 +2,7 @@
 
 ### An android drink delivery app for usc coffee & tea lovers.
 
-##App Preview
+## App Preview
 
 <img src="./App_Preview.gif" width="200"/>
 
