@@ -3,7 +3,8 @@
 ### An android drink delivery app for usc coffee & tea lovers.
 
 ##App Preview
-<img src="./App_Preview.gif"/>
+
+<img src="./App_Preview.gif" width="200"/>
 
 ## Environment
    This application is built and tested with Android API Level 32, on emulator Nexus 5X in 
